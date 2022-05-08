@@ -14,32 +14,46 @@
   background-color: darkgray;
 }
 
-.nav-base div {
-  position:relative;
-  text-decoration: none;
+.nav-link {
+  position: relative;
+  display: inline-block;
   font-size: 20px;
-  color: white;
   padding: 1rem;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: white;
 }
 
 .dd {
   position: absolute;
   display: none;
-  width: 100%;
+  min-width: 120px;
+  font-size: 16px;
 }
 
+.dd a {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  background-color: gainsboro;
+  color: darkslategray;
+}
+
+.dd a:hover {
+  background-color: lightgray;
+}
 
 .nav-base div:hover {
   background-color: black;  
 }
 
 .nav-base div:hover .dd {
-  display: flex;
-  flex-direction: column;
+  display: block;
   background-color: gray;
-  text-decoration: none; 
+  color: white;
 }
-
 
 .footer-base {
   display: flex;
@@ -49,6 +63,3 @@
   color: white;
   justify-content: flex-end;
 }
-
-
-
