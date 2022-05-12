@@ -31,6 +31,7 @@
   display: none;
   min-width: 120px;
   font-size: 16px;
+  z-index: 1;
 }
 
 .dd a {
@@ -43,6 +44,7 @@
 
 .dd a:hover {
   background-color: lightgray;
+  z-index: 1;
 }
 
 .nav-base div:hover {
@@ -62,4 +64,88 @@
   background-color: black;
   color: white;
   justify-content: flex-end;
+}
+
+.slide-container {
+  position: relative; 
+  border: 2px solid steelblue;
+  width: 100vw;
+  height: 800px;
+  overflow: hidden;
+}
+
+.slide-wrapper {
+  width: 100vw * 5;
+  animation: slide 30s cubic-bezier(1, 0, 1, 0) infinite;
+}
+
+.slide {
+  float: left;
+  width: 100vw;
+  height: 800px;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0px
+  }
+
+  20% {
+    margin-left: calc(101vw * -1);
+  }
+
+  40% {
+    margin-left: calc(101vw * -2);
+  }
+
+  60% {  
+    margin-left: calc(101vw * -3);
+  }
+
+  80% {
+    margin-left: calc(101vw * -4);
+  }
+}
+
+.prod-container {
+  display: flex;
+  height: 400px;
+  width: 100%;
+}
+
+.prod-card {
+  background-color: #f3f1fe;
+  padding: 10px;
+  width: 25%;
+  margin: 40px;
+  box-shadow: 2px 2px 12px 4px gainsboro;
+}
+
+.prod-card:hover {
+  width: 26%;
+  height: 310px;
+}
+
+.prod-card-title {
+
+}
+
+.prod-card-img {
+  height: 120px;
+  width: 100%;
+}
+
+.prod-card-text {
+  color: steelblue; 
+}
+
+.prod-card-button {
+  width: 100%;
+  border: medium solid #908cbe;
+  border-radius: 8px;
+  background-color: #e5e7f5;
+  font-weight: bold;
+  color: orange;
+  font-size: 20px;
+  text-overflow: contain;
 }
