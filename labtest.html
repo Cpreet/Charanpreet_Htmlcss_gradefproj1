@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Lab test </title>
+  <link rel="stylesheet" href="labteststyles.css" type="text/css">
+</head>
+<body>
+  <div class="labtest-container">
+    <div class="labtest-card">
+      <form class="labtest-formcontainer" >
+      <fieldset class="labtest-form">
+	<legend><h3>Your Contact Details</h3></legend>
+	<input type="text" placeholder="fullname">
+	<input type="text" placeholder="Patient Id if exists">
+	<input type="tel" placeholder="Contact Number" pattern="+[0-9]*2-[0-9]{10}">
+	<input type="email" placeholder="email id">
+      </fieldset>
+      <fieldset class="labtest-form">
+        <legend><h3>Address</h3></legend>
+	<input type="number" placeholder="House Number">
+	<input type="text" placeholder="street">
+	<input type="text" placeholder="Area">
+	<input list="district" placeholder="Select A District">
+	<datalist id="district">
+	  <option value="district1">
+	  <option value="district2">
+	  <option value="district3">
+	  <option value="district4">
+	  <option value="district5">
+	  <option value="district6">
+	</datalist>
+      </fieldset>
+      <fieldset class="labtest-form">
+        <legend><h3>Test Type</h3></legend>
+	<input type="checkbox" id="CBC" name="CBC" >
+	<label for="CBC"> CBC </label>
+	<input type="checkbox" id="Complete Urine" name="Complete Urine" >
+	<label for="Complete Urine"> Complete Urine </label>
+	<input type="checkbox" id="Lipid Profile" name="Lipid Profile" >
+	<label for="Lipid Profile"> Lipid Profile </label>
+	<input type="checkbox" id="Thyroid Stimulating Hormone (TSH)" name="Thyroid Stimulating Hormone (TSH)" >
+	<label for="Thyroid Stimulating Hormone (TSH)"> Thyroid Stimulating Hormone (TSH) </label>
+	<input type="checkbox" id="Glucose Test" name="Glucose Test" >
+	<label for="Glucose Test"> Glucose Test </label>
+      </fieldset>
+      <fieldset class="labtest-form">
+	<legend>
+	  <h3>Do you want a hardcopy ?</h3>
+	</legend>
+	<input type="radio" id="hardcopy-yes" val="yes" name="hardcopy">
+	<label for="hardcopy-yes"> Yes </label>
+	<input type="radio" id="hardcopy-no" val="no" name="hardcopy">
+	<label for="hardcopy-no"> No </label>
+      </fieldset>
+      <fieldset class="labtest-form">
+        <legend>
+          <h3>Date and Time</h3>
+        </legend>
+	<label for="date">Date: </label>
+	<input id="date" type="date">
+	<label for="time">Time: </label>
+	<input id="time" type="time">
+      </fieldset>
+    </form>      
+    <img class="labtest-img" src="images/Lab-Test/lab-test.jpg" alt="lab-img" />
+    </div>
+    <div class="labtest-buttoncontainer">
+      <button class="labtest-button"> Reset </button>
+      <button class="labtest-button"> Submit </button>
+    </div>  
+  </div>
+</body>
+</html>
